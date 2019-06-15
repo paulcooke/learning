@@ -18,6 +18,4 @@ Note
 You have to use the arguments object.
 
 Remember to use Read-Search-Ask if you get stuck. Write your own code.
-
-
 */
