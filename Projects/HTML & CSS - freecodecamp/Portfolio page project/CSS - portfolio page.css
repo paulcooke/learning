@@ -1,0 +1,268 @@
+/* General formatting */
+
+html, body , header{
+	background-color: white;
+	font-family: "Trebuchet MS", sans-serif;
+  max-width: 1024px;
+  margin: auto;
+  padding: 2px 2px 0px 2px;
+	box-sizing: border-box;
+}
+
+header a, .contact-panel a, .project-panel-container a, .show-all a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Header formatting */
+
+header li {
+  list-style: none;
+	border-radius: 5px;
+	padding: 4px;
+}
+
+header li:hover {
+	background-color: #FCD8B4;
+	transition: background-color 1s;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+	width: 100%;
+	height: 65px;
+	margin-top: -10px;
+	align-items: center;
+}
+
+#triforce {
+  height: 40px;
+  width: auto;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#nav-list li {
+		margin: 0px 15px 0px 15px;
+}
+
+#welcome-section {
+	height: 100vh;
+	margin-bottom: -80px;
+}
+
+#background-div {
+	background-image: url(https://github.com/nzimwale/nzimwale.github.io/blob/master/Assets/Images/rawpixel-487106-unsplash.jpg?raw=true);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 60%;
+	padding-top: 30vh;
+	width: 1024px;
+	max-width: 100%;
+}
+
+#text-div {
+	padding: 2px 2px 2px 20px;
+	border-radius: 5px;
+	background-color: rgba(360,360,360,0.9);
+	width: 60vw;
+	margin: 8vh 0px 0px 20px;
+}
+
+code {
+	font-size: 20px;
+	color: #cc6600;
+}
+
+
+/* Main formatting */
+
+main {
+  padding-top: 60px;
+}
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h2 {
+	color: #cc6600;
+	font-family: monospace;
+	margin-bottom: -4px;
+}
+
+#projects-subhead {
+	font-weight: normal;
+}
+
+.freecodecamp-projects {
+	background-color: #fffcf9;
+	margin-top: 20px;
+}
+
+#fcc-header {
+	padding: 0px 20px 0px 40px;
+	text-align: left;
+	margin: 30px 0px 30px 0px;
+	font-size: 15px;
+	line-height: 18pt;
+	font-weight: normal;
+}
+
+.panel-area {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.project-panel-container {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 6px 6px 6px;
+}
+
+.project-tile {
+	display: block;
+	border: 1px solid #FFD4A8;
+	width: 300px;
+	height: 430px;
+	border-radius: 5px;
+	background-color: white;
+	overflow: hidden;
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+.project-tile:hover {
+	background-color: #FCD8B4;
+	transition: background-color 1s;
+}
+
+.project-images {
+	width: 294px;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: -14px;
+	padding: 0px 2px 2px 2px;
+	border-bottom: 1px solid #FFD4A8;
+	border-top: 1px solid #FFD4A8;
+}
+
+.project-date {
+	font-size: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.project-name {
+	font-size: 13px;
+	margin: -4px 8px 0px 8px;
+}
+
+h4 {
+	font-size: 16px;
+	font-family: monospace;
+	color: #cc6600;
+}
+
+.show-all {
+	display: inline-block;
+	font-family: monospace;
+	font-size: 18px;
+	color: #cc6600;
+	border: 1px solid #FFD4A8;
+	border-radius: 5px;
+	margin-bottom: 40px;
+	padding: 4px;
+	width: 120px;
+	text-decoration: none;
+}
+
+.show-all:hover {
+	background-color: #FCD8B4;
+	transition: background-color 1s;
+}
+
+/* Profile links formatting */
+
+#contact-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px 0px 40px 0px;
+}
+
+#contact-section h2 {
+	margin-bottom: 40px;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 80%;
+}
+
+.contact-panel {
+	font-weight: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.contact-panel img {
+	width: 60px;
+	height: 60px;
+}
+
+/* Footer formatting */
+
+footer {
+	background-color: #fffcf9;
+	font-weight: normal;
+	font-family: monospace;
+	font-size: 12px;
+	color: #cc6600;
+	text-align: right;
+	padding: 10px;
+}
+
+/* Media formatting */
+
+@media only screen and (min-width: 600px) {
+	#text-div {
+		max-width: 340px;
+		margin: 8vh 0px 0px 9%;
+	}
+
+	#nav-list li {
+		margin: 0px 20px 0px 20px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#nav-list li {
+		margin: 0px 40px 0px 40px;
+	}
+
+	#text-div {
+		margin: 8vh 0px 0px 15%;
+	}
+}
