@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+main {
+	background-color: white;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+a[href^="#"] {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav li {
+	list-style: none;
+}
+
+.big-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+#navbar {
+	display: flex;
+	flex-direction: column;
+	min-width: 240px;
+	padding-left: 20px;
+	font-size: 24px;
+	border-right: solid grey 2px;
+}
+
+#fixing-div {
+	position: fixed;
+}
+
+#nav-header {
+	font-size: 34px;
+}
+
+.navliitem {
+	font-size: 20px;
+	border: solid black 1px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	min-width: 100%;
+	margin-left: -80px;
+	padding: 8px 0px 8px 40px;
+}
+
+.navliitem:hover {
+	background-color: #e0e0e0;
+	transition: background-color 1s;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 10px 10px 40px;
+	max-width: 900px;
+}
+
+.main-section {
+	padding-top: 20px;
+}
+
+section header {
+	font-size: 24px;
+}
+
+section code {
+	display: block;
+	background-color: #fff7ef;
+	padding: 10px 0px 10px 20px;
+	margin: 0px 20px 0px 20px;
+	border-radius: 8px;
+	color: #cc6600;
+	white-space: pre;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	max-width: 600px;
+}
+
+@media only screen and (max-width: 675px) {
+	.big-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#fixing-div {
+		position: relative;
+	}
+
+	#navlist {
+		height: 180px;
+	}
+
+	#navbar {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 320px;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
+		align-items: center;
+		text-align: center;
+		border: none;
+	}
+
+	#nav-header {
+		font-size: 34px;
+	}
+
+	.navliitem {
+		width: 700px;
+		font-size: 18px;
+		border: none;
+		border-bottom: solid black 1px;
+		padding: 4px;
+	}
+
+	.navliitem:hover {
+		background-color: #e0e0e0;
+		transition: background-color 1s;
+		border-right-width: 0px;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 10px 10px 40px;
+		margin-top: 0px;
+	}
+}

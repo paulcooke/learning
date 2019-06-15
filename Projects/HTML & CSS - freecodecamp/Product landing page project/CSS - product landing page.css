@@ -1,0 +1,285 @@
+html, main {
+	background-color: white;
+	font-family: "Trebuchet MS", sans-serif;
+  padding: 0px 0px 10px 0px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+	background-color: white;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	height: 65px;
+	width: 100%;
+	margin: -65px auto;
+	align-items: center;
+}
+
+.image-container {
+	width: 45vw;
+}
+
+#header-img {
+	height: 60px;
+}
+
+#nav-bar {
+
+}
+
+#nav-list {
+	display: flex;
+	width: 45vw;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+li {
+	list-style: none;
+	padding: 3px;
+}
+
+#hero {
+	margin-top: 65px;
+	background-image: url(https://s.aolcdn.com/hss/storage/midas/16ec5c7ddbbe4f15dc0e9dcb8d8c7618/205926903/vr-ed.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+	background-size: cover;
+	background-position: left bottom;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 300px;
+	padding-left: 40px;
+	align-items: flex-start;
+}
+
+#hero-header {
+	color: white;
+	font-size: 20px;
+}
+
+#email {
+	height: 20px;
+  padding: 5px;
+	width: 240px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+	font-size: 18px;
+	margin-top: 5px;
+	padding: 8px 8px 8px 8px;
+	border-color: black;
+	border-radius: 5px;
+	background-color: #e8d107;
+	color: black;
+}
+
+#features {
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	justify-items: center;
+	max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.feature-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	font-size: 40px;
+}
+
+.feature-desc {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	width: 80vw;
+	padding: 5px;
+}
+
+.feature-header {
+	margin-bottom: -10px;
+}
+
+#how-it-works {
+	background-image: linear-gradient(#e0e0e0,white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	padding: 20px 0px 40px 0px;
+}
+
+#video {
+	margin-top: 10px;
+}
+
+#pricing {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	padding: 20px 0px 40px 0px;
+}
+
+.pricing-boxes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-aling: center;
+	margin: 10px;
+	width: 300px;
+	max-width: 400px;
+	background-color: #f5f5f5;
+}
+
+.product-name {
+	background-color: #e8d107;
+	width: 100%;
+	text-align: center;
+	padding-top: -15px;
+	text-transform: uppercase;
+}
+
+.product-price {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	margin-bottom: -20px;
+}
+
+.product-ksps {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	margin-left: -38px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.select-button {
+	font-size: 18px;
+	margin-bottom: 10px;
+	padding: 8px 16px 8px 16px;
+	border-radius: 5px;
+	background-color: #e8d107;
+	color: black;
+}
+
+.select-button:hover {
+  background-color: #ffffcc;
+  transition: background-color 1s;
+}
+
+footer {
+	background-color: grey;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 20px;
+}
+
+#footer-list {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+#copyright {
+	margin-bottom: 0px;
+	margin-top: -25px;
+}
+
+/*--------All the media query adjustments are below here--------*/
+
+@media(max-width: 550px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		margin: -65px 0px 70px 0px;
+	}
+
+	.image-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	#nav-list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		margin-left: -40px;
+	}
+
+	.feature-desc {
+		width: 100%;
+		text-align: center;
+	}
+
+	.icon {
+		display: none;
+	}
+
+	#how-it-works {
+		text-align: center;
+	}
+
+	#pricing {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: auto;
+	}
+
+	#pricing-boxes {
+		min-width: 300px;
+		margin: auto;
+	}
+
+}
+
+
+@media (min-width: 800px) {
+	.pricing-boxes {
+		width: 33.33%;
+		max-width: 300px;
+	}
+}
+
+@media (min-width: 550px) {
+	#video {
+		width: 550px;
+		height: 550px;
+
+	}
+}

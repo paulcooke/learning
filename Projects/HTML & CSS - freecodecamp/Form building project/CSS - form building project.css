@@ -1,0 +1,110 @@
+html, body {
+	background-color: #99ccff;
+	font-family: "Trebuchet MS", sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+	text-align: center;
+}
+
+form {
+	background-color: #e0e0e0;
+	padding: 20px;
+	margin: auto;
+	width: 80%;
+	border-radius: 5px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(2, auto);
+	align-content: start;
+}
+
+.l {
+	justify-self: right;
+	align-self: center;
+}
+
+.r {
+	justify-self: left;
+	align-self: center;
+}
+
+ul {
+	list-style: none;
+	text-align: left;
+	margin-left: -42px
+}
+
+#name, #email, #number{
+	height: 20px;
+	min-width: 140%;
+	margin: auto;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+#dropdown {
+	height: 35px;
+	width: 100px;
+	padding: 0px;
+	margin: auto;
+	border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+
+#other-comments {
+	height: 90px;
+	width: 200px;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+}
+
+#eatq, #doq, #poopq, #feedbackq {
+	align-self: start;
+}
+
+#submit {
+	font-size: 16px;
+	padding: 8px 24px;
+	border-radius: 5px;
+	background-color: #66b2ff;
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	form {
+	background-color: #e0e0e0;
+	padding: 20px;
+	width: 80%;
+	border-radius: 5px;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: auto;
+	}
+
+	.l {
+	align-self: start;
+	justify-self: left;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	}
+
+	.r {
+	align-self: start;
+	margin: 0px 0px 0px 0px;
+	}
+
+	ul {
+		margin-top: -15px;
+	}
+
+	#other-comments {
+		width: 140%;
+	}
+
+	#submit {
+		margin-top: -20px;
+	}
+}

@@ -1,0 +1,73 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+
+	<header>
+		<h1 id="title">
+			The big cat survey 2019
+		</h1>
+	</header>
+
+	<p id="description">Help us figure out what the modern cat needs in 2019. we need your feedback!</p>
+
+	<form action="/submit-cat-info" id="survey-form">
+
+		<div class="l"><label for="name" id="name-label">* Name</label>
+		</div>
+		<div class="r"><input id="name" type="text" placeholder="Name and Purrname" required></input>
+		</div>
+		<div class="l"><label for="email" id="email-label">* Email</label></div>
+		<div class="r"><input id="email" type="email" placeholder="Meowmail.purr" required></input>
+		</div>
+		<div class="l"><label for="number" id="number-label">* How old are you?</label></div>
+		<div class="r"><input id="number" type="number" min="0" max="30" placeholder="Age" required></input>
+		</div>
+
+		<p class="l">Are you a female or male cat?</p>
+		<div class="r" class="dropdown"><select id="dropdown">
+				<label for="female"><option value="female">Female</option></label>
+				<label for="male"><option value="male">Male</option></label>
+				<label for="not-saying"><option value="not-saying">Prefer not to say</option></label>
+			</select></div>
+
+		<p class="l" id="eatq">What are your favourite things to eat?</p>
+		<div class="r" class="checkbox">
+			<ul>
+				<li><label for="chicken"><input id="chicken" type="checkbox" value="chicken" name="fav-foods">Chicken</input></label></li>
+				<li><label for="fish"><input id="fish" type="checkbox" value="fish" name="fav-foods">Fish</input></label></li>
+				<li><label for="bugs"><input id="bugs" type="checkbox" value="bugs" name="fav-foods">Bugs</input></label></li>
+				<li><label for="plants"><input id="plants" type="checkbox" value="plants" name="fav-foods">Plants</input></label></li>
+			</ul>
+		</div>
+
+		<p class="l" id="doq">What is your favourite activity?</p>
+		<div class="r" class="checkbox">
+			<ul>
+			<li><label for="sleeping"><input id="sleeping" type="checkbox" value="sleeping" name="fav-activities">Sleeping</input></label></li>
+			<li><label for="playing-mouse"><input id="playing-mouse" type="checkbox" value="playing-mouse" name="fav-activities">Playing mouse</input></label></li>
+			<li><label for="sun-bathing"><input id="sun-bathing" type="checkbox" value="sun-bathing" name="fav-activities">Sun-bathing</input></label></li>
+			<li><label for="fighting"><input id="fighting" type="checkbox" value="fighting" name="fav-activities">Fighting the neighbours</input></label></li>
+			<li><label for="hitting-stuff"><input id="hitting-stuff" type="checkbox" value="hitting-stuff" name="fav-activities">Hitting things onto the floor</input></label></li>
+			<li><label for="asking"><input id="asking" type="checkbox" value="asking" name="fav-activities">Asking for things you don't want</input></label></li>
+			<li><label for="boops"><input id="boops" type="checkbox" value="boops" name="fav-activities">Giving boops</input></label></li>
+		</ul>
+		</div>
+
+		<p class="l" id="poopq">Where do you normally poop?</p>
+		<div class="r" class="radio">
+			<ul>
+			<li><label for="inside-pooper"><input id="inside-pooper" type="radio" value="inside-pooper" name="pooper-type">Inside</input></label></li>
+			<li><label for="outside-pooper"><input id="outside-pooper" type="radio" value="outside-pooper" name="pooper-type">Outside</input></label></li>
+			<li><label for="secret-pooper"><input id="secret-pooper" type="radio" value ="secret-pooper" name="pooper-type">It's a secret</input></label></li>
+			</ul>
+			</div>
+
+		<p class="l" id="feedbackq">Please add any further feedback here:</p>
+		<div class="r"> <textarea id="other-comments" placeholder="Please type here" form="survey-form" rows="10" columns="30"></textarea>
+		</div>
+
+<div><!--empty div for button position in grid--></div>
+		<button id="submit" type="submit" class="r">Submit</button>
+	</form>
+
+</main>
