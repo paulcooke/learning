@@ -5,7 +5,6 @@ function myReplace(str, before, after) {
     } else {
       return str.replace(before, after);
     }
-
 }
 
 
