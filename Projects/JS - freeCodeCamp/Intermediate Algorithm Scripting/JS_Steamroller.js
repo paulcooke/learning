@@ -1,3 +1,4 @@
+// .flat worked on fcc, but not in atom... ?
 function steamrollArray(arr) {
 
   return arr.flat(3);
