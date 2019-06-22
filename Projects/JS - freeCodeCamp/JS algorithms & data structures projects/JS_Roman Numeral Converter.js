@@ -1,3 +1,26 @@
+/*
+After finishing checked and compared with the answer in the hints. Leaving it here as it's better than mine:
+
+  var convertToRoman = function(num) {
+
+  var decimalValue = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+  var romanNumeral = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+
+  var romanized = '';
+
+  for (var index = 0; index < decimalValue.length; index++) {
+    while (decimalValue[index] <= num) {
+      romanized += romanNumeral[index];
+      num -= decimalValue[index];
+    }
+  }
+
+  return romanized;
+}
+
+*/
+
+
 function convertToRoman(num) {
 
   let thousandsObj = {'1000': 'M', '2000': 'MM', '3000': 'MMM', '4000': 'MMMM', '5000': 'MMMMM', '6000': 'MMMMMM', '7000': 'MMMMMMM', '8000': 'MMMMMMMM', '9000': 'MMMMMMMMM'};
