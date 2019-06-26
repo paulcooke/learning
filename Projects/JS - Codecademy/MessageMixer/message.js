@@ -1,6 +1,6 @@
 /* this works in codecademy's environment, not sure why I'm getting errors in my local environment...*/
 
-import {countCharacter,capitalizeFirstCharacterOfWords,reverseWord, reverseAllWords,replaceFirstOccurence,replaceAllOccurrences,encode,palindrome,pigLatin} from '/Users/paulcooke/Coding/GitHub/learning/Projects/JS - Codecademy/Message Mixer/messageMixer.js';
+import {countCharacter,capitalizeFirstCharacterOfWords,reverseWord, reverseAllWords,replaceFirstOccurence,replaceAllOccurrences,encode,palindrome,pigLatin} from 'Message Mixer/messageMixer.js';
 
 
 function displayMessage() {
